@@ -1,0 +1,57 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px; /* Reduce gap to fit four items */
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+}
+
+.item {
+    flex: 1 1 calc(25% - 20px); /* Ensure four items per row, accounting for gap */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .item {
+        flex: 1 1 calc(33.33% - 20px); /* Three items per row on medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on small screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .item {
+        flex: 1 1 100%; /* One item per row on very small screens */
+    }
+}
