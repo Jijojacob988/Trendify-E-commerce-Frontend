@@ -1,0 +1,41 @@
+.newcollections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px; /* Space from left and right */
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the section horizontally */
+    max-width: 1200px; /* Limit the maximum width */
+}
+
+.newcollections h1 {
+    color: #171717;
+    font-size: 40px; /* Reduced font size */
+    font-weight: 600;
+    text-align: center; /* Center the heading text */
+    margin: 0; /* Remove default margin */
+}
+
+.newcollections hr {
+    width: 150px; /* Reduced width */
+    height: 4px; /* Reduced height */
+    border-radius: 10px;
+    background: #252525;
+    margin: 10px 0; /* Margin for spacing above and below the rule */
+}
+
+.collections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Reduced space between items */
+    justify-content: center; /* Center items horizontally */
+    padding: 0 10px; /* Reduced padding to better fit content */
+    box-sizing: border-box; /* Ensure padding does not affect the total width */
+    max-width: 100%; /* Ensure the collections container fits within the parent */
+}
+
+.collection-item {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row with gaps considered */
+    box-sizing: border-box; /* Ensure padding/margins do not affect size */
+    min-width: 200px; /* Ensure items have a minimum width */
+}
