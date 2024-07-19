@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0 auto; /* Center the section horizontally */
     max-width: 1200px; /* Limit the maximum width */
+    margin-bottom: 100px;
 }
 
 .newcollections h1 {
