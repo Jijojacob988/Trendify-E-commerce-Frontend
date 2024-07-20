@@ -1,0 +1,42 @@
+.relatedproducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-height: 80vh; /* Adjust height to ensure it fits within the viewport */
+    margin-bottom: 20px; /* Add margin at the bottom */
+    padding: 20px; /* Add padding on all sides */
+    padding-left: 20px; /* Adjust left padding for more space */
+    padding-right: 20px; /* Adjust right padding for more space */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    width: 100%; /* Ensure the section takes full width */
+    max-width: 1200px; /* Set a max-width for the section */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
+}
+.relatedproducts h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.relatedproducts hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.relatedproducts-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px; /* Adjust gap between items */
+    justify-content: center; /* Center the items within the container */
+    flex-wrap: nowrap; /* Prevent wrapping to ensure all items stay in the same row */
+}
+.relatedproducts-item .item {
+    flex: 1 1 22%; /* Adjust flex basis to fit four items in one row */
+    max-width: 22%; /* Ensure items do not exceed this width */
+}
+.relatedproducts-item .item img {
+    width: 100%; /* Ensure the image fits within the item */
+    height: auto; /* Maintain the aspect ratio */
+}
