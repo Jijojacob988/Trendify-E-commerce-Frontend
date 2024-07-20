@@ -6,7 +6,7 @@ const Item = ({ id, name, image, new_price, old_price }) => {
   return (
     <div className='item'>
       <Link to={`/product/${id}`}>
-        <img src={image} alt={name} />
+        <img onClick={window.scrollTo(0,0)} src={image} alt={name} />
       </Link>
       <h2>{name}</h2>
       <div className="item-prices">
