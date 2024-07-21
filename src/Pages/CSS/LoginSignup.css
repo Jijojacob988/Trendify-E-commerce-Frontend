@@ -1,8 +1,10 @@
 .loginsignup {
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     background: #fce3fe;
     padding-top: 100px;
+    padding-bottom: 20px; /* Add padding to the bottom */
+    box-sizing: border-box; /* Include padding in the height calculation */
 }
 
 .loginsignup-container {
@@ -11,6 +13,7 @@
     background: white;
     margin: auto;
     padding: 40px 60px;
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .loginsignup-container h1 {
@@ -32,6 +35,7 @@
     outline: none;
     color: #5c5c5c;
     font-size: 15px;
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .loginsignup-container button {
@@ -46,7 +50,8 @@
     cursor: pointer;
     display: block; /* Ensure the button is a block element */
 }
-.loginsignup-login{
+
+.loginsignup-login {
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -54,12 +59,14 @@
     font-size: 15px;
     font-weight: 500;
 }
-.loginsignup-login span{
+
+.loginsignup-login span {
     color: #ff4141;
     font-weight: 600;
     cursor: pointer;
 }
-.loginsignup-agree{
+
+.loginsignup-agree {
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -67,4 +74,89 @@
     color: #5c5c5c;
     font-size: 15px;
     font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+    .loginsignup {
+        padding-top: 50px;
+    }
+    .loginsignup-container {
+        width: auto;
+        max-width: 500px;
+        max-height: 400px;
+    }
+    .loginsignup-container h1 {
+        margin: 10px 0px;
+    }
+    .loginsignup-fields {
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .loginsignup-container button {
+        width: 80%;
+    }
+    .loginsignup-login {
+        font-size: 14px;
+    }
+    .loginsignup-agree {
+        font-size: 12px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .loginsignup-container {
+        padding: 20px 30px;
+    }
+    .loginsignup-container h1 {
+        font-size: 24px;
+    }
+    .loginsignup-container button {
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .loginsignup {
+        padding-top: 20px;
+        padding-bottom: 20px; /* Ensure some padding at the bottom */
+        height: auto; /* Adjust to fit content */
+    }
+    .loginsignup-container {
+        width: 90%;
+        padding: 15px 20px;
+        max-width: 300px;
+        box-sizing: border-box; /* Include padding in the width calculation */
+    }
+    .loginsignup-container h1 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .loginsignup-fields {
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .loginsignup-fields input {
+        height: 30px;
+        font-size: 14px;
+        padding-left: 10px; /* Adjust padding */
+    }
+    .loginsignup-container button {
+        width: 100%;
+        height: 35px;
+        font-size: 14px;
+    }
+    .loginsignup-login {
+        font-size: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .loginsignup-agree {
+        font-size: 12px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

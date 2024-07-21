@@ -54,3 +54,64 @@
     max-width: 100%; /* Ensure the image fits within the container */
     height: auto; /* Maintain aspect ratio */
 }
+
+@media(max-width:1280px){
+    .offers{
+        padding: 0px 80px;
+        margin-bottom: 120px;
+    }
+    .offers-left h1{
+        font-size: 40px;
+    }
+    .offers-left p{
+        font-size: 18px;
+    }
+    .offers-right img{
+        width: 300px;
+    }
+    .offers-left button{
+        width: 220px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+@media(max-width:800px){
+    .offers{
+       
+        margin-bottom: 60px;
+    }
+    .offers-left h1{
+        font-size: 25px;
+    }
+    .offers-left p{
+        font-size: 15px;
+    }
+    .offers-right img{
+        width: 220px;
+    }
+    .offers-left button{
+        width: 160px;
+        height: 35px;
+        font-size: 13px;
+    }
+}
+@media(max-width:500px){
+    .offers{
+       height: 25vh;
+        margin-bottom: 50px;
+    }
+    .offers-left h1{
+        font-size: 16px;
+    }
+    .offers-left p{
+        font-size: 10px;
+    }
+    .offers-right img{
+        width: 120px;
+    }
+    .offers-left button{
+        width: 120px;
+        height: 25px;
+        font-size: 10px;
+    }
+}

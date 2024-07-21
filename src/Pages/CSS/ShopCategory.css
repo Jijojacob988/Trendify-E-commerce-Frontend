@@ -1,30 +1,38 @@
-.shopcategory-banner{
+.shopcategory-banner {
     display: block;
     margin: 30px auto;
     width: 82%;
+    text-align: center; /* Center the banner content */
+    padding: 10px; /* Add padding for better appearance */
+    background-color: #f5f5f5; /* Background color for better visibility */
+    border-radius: 10px; /* Rounded corners for a modern look */
 }
-.shopcategory-indexSort{
+
+.shopcategory-indexSort {
     display: flex;
     margin: 0px 170px;
     justify-content: space-between;
     align-items: center;
 }
-.shopcategory-sort{
+
+.shopcategory-sort {
     padding: 10px 20px;
     border-radius: 40px;
     border: 1px solid #888;
 }
-.shopcategory-indexSort p span{
-    font-weight: 600;
 
+.shopcategory-indexSort p span {
+    font-weight: 600;
 }
-.shopcategory-products{
+
+.shopcategory-products {
     margin: 20px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px
+    row-gap: 80px;
 }
-.shopcategory-loadmore{
+
+.shopcategory-loadmore {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,4 +44,64 @@
     color: #787878;
     font-size: 18px;
     font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+    .shopcategory-banner {
+        margin: 20px auto;
+        width: 90%;
+    }
+    .shopcategory-indexSort {
+        width: 90%;
+        margin: auto;
+    }
+    .shopcategory-sort {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .shopcategory-indexSort p {
+        font-size: 12px;
+    }
+    .shopcategory-products {
+        width: 90%;
+        margin: 10px auto;
+        row-gap: 40px;
+    }
+    .shopcategory-products .item {
+        margin: auto;
+    }
+    .shopcategory-loadmore {
+        margin: 100px auto;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .shopcategory-banner {
+        width: 95%;
+        padding: 8px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+    .shopcategory-products {
+        width: 95%;
+    }
+    .shopcategory-loadmore {
+        margin: 60px auto;
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 500px) {
+    .shopcategory-banner {
+        width: 98%;
+        padding: 5px; /* Further adjust padding */
+        font-size: 12px; /* Further adjust font size */
+    }
+    .shopcategory-products {
+        grid-template-columns: 1fr 1fr;
+    }
 }

@@ -51,7 +51,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .item {
         flex: 1 1 100%; /* One item per row on very small screens */
     }
